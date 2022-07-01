@@ -1,0 +1,90 @@
+.chat {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.chat__sidebar {
+    display: flex;
+    flex: 0.3;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    /* background-color: red; */
+}
+.chat__sidebarUsersWidget {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    background-color: rgb(39, 41, 45);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.chat__sidebarUsersWidget__user {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.chat__sidebarUsersWidget__userDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.chat__sidebarUsersWidget__userName {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.chat__sidebarUsersWidget__userJob {
+    font-size: 12px;
+}
+
+/* --------------------------- */
+.chat__main {
+    display: flex;
+    flex-direction: column;
+    flex: 0.4;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 1300px;
+    overflow-y: scroll;
+    --ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.chat__mainHeader{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 0 20px 10px 10px;
+    background-color: rgba(49, 50, 55, 0.8);
+    color: #2196f3;
+}
+
+/* --------------------- */
+.chat__widget {
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 300px;
+    margin-right: auto;
+    background-color: blue;
+}
+

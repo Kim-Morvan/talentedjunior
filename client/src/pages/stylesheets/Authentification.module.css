@@ -1,0 +1,9 @@
+.authentification {
+    background-image: url("https://pixabay.com/get/ga130af5a551ccb4d8b3f51b0acc80dd2a88835d19d64d0406ec29746175bf5304a0244b67efb77f2f2aac2a693caaddf.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    bottom: 0;
+}

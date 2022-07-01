@@ -13,5 +13,11 @@
         "tab.activeBorder": "#ff3333",
         "titleBar.activeBackground": "#ff0000",
         "titleBar.inactiveBackground": "#ff000099"
-    }
+    },
+    "mithrilEmmet.outputDefaultTagName": true,
+    "mithrilEmmet.vnodeFactoryFunctionName": "",
+    "emmet.includeLanguages": {
+        "react": "react"
+    },
+    "emmet.showSuggestionsAsSnippets": true
 }

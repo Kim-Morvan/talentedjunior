@@ -1,0 +1,58 @@
+.usersWidgetWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    background-color: rgb(39, 41, 45);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.usersWidgetWrapper > span {
+    font-size: 14px;
+    color: darkgray;
+}
+.usersWidget {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.usersWidget__user {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.usersWidget__userDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.usersWidget__user span {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.usersWidget__userJob {
+    font-size: 12px;
+}
+
+.usersWidget__button > button {
+    border-radius: 15px;
+    padding: 4px 15px;
+    box-shadow: none;
+    text-transform: capitalize;
+    background-color: #2196f3;
+}
+.usersWidget__icon {
+    display: flex;
+    font-size: 1.7rem;
+    column-gap: 20px;
+}
+.usersWidget__pitch {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3.15rem;
+    gap: 10px;
+}
