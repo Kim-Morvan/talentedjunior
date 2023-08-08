@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import bcrypt from "bcrypt";
 
-import User from "../../../../server/models/user.js";
-import connectMongoClient from "../../../../server/database/mongodb.js";
+import User from "../../../../models/user.js";
+import connectMongoClient from "../../../../database/mongodb.js";
 
 export async function POST(res) {
   try {
@@ -11,11 +11,11 @@ export async function POST(res) {
     const { username, email, password } = data;
     console.log("data", data);
 
-    // const user = await User.findOne({ email });
-    // console.log("user", user);
-    // if (user) {
-    //   return res.status(400).json({ error: "User already exists" });
-    // }
+    const user = await User.findOne({ email });
+    console.log("user", user);
+    if (user) {
+      return res.status(400).json({ error: "User already exists" });
+    }
 
     const salt = 12;
     const hashPwd = bcrypt.hashSync(password, salt);
