@@ -2,25 +2,18 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
 
-const uri = process.env.NEXT_PUBLIC_DATABASE_URI;
+const uri = process.env.MONGODB_URI;
 
 const options = {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 };
 
-const connectMongoClient = () => {
+const connectMongoClient = async () => {
   try {
-    mongoose.connect(uri, options);
+    await mongoose.connect(uri, options);
 
-    mongoose.connection.on("open", () => {
-      console.log("Connected to MongoDb");
-    });
-
-    mongoose.connection.on("error", (error) => {
-      console.log("MongoDb connection error" + error);
-      process.exit();
-    });
+    console.log("Connected to MongoDb");
   } catch (error) {
     console.error(`Error: ${error.message} `);
   }
