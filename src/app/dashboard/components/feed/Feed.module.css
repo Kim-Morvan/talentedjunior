@@ -1,0 +1,143 @@
+/* FeedEntryBox Styling */
+.FeedEntryBox {
+  width: 100%;
+  /* background-color: #191919; */
+  background-color: #0f0f0f;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.FeedEntryBox__form {
+  display: flex;
+  flex-direction: column;
+}
+.FeedEntryBox__formInput {
+  display: flex;
+  column-gap: 10px;
+}
+.FeedEntryBox__input {
+  flex: 1;
+  border-radius: 20px;
+  padding: 0 20px;
+  background-color: #313237;
+  color: white;
+  border: none;
+  font-size: var(--small-text);
+}
+.FeedEntryBox__formButton {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.FeedEntryBox__formButton > button {
+  border-radius: 15px;
+  padding: 4px 15px;
+  box-shadow: none;
+  text-transform: capitalize;
+  background-color: #2196f3;
+}
+.FeedEntryBox__formButtonIcons {
+  display: flex;
+  flex: 1;
+  column-gap: 20px;
+}
+.FeedEntryBox__formIcon {
+  font-size: 2rem;
+}
+
+/* FeedSheared Styling */
+.feedSheared {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  background-color: #0f0f0f;
+  /* background-color: rgb(39, 41, 45); */
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.feedShearedHeaderWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.feedShearedHeaderWrapper > span {
+  font-size: 14px;
+  color: darkgray;
+}
+.feedShearedHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.feedShearedHeader__user {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.feedShearedHeader__userDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.feedShearedHeader__user span {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.feedShearedHeader__userJob {
+  font-size: 12px;
+}
+
+.feedShearedHeader__credentials {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.feedShearedHeader__icon {
+  display: flex;
+  font-size: 1.7rem;
+  column-gap: 20px;
+  color: #696969;
+}
+.feedShearedHeader__pitch {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3.15rem;
+  gap: 10px;
+}
+
+/* feedShearedBody Styling */
+.feedShearedBody {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.feedShearedBody > p {
+  font-size: 14px;
+}
+.feedShearedBody__img {
+  border-radius: 10px;
+}
+
+/* feedShearedFooter Styling */
+.feedShearedFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 3.15rem;
+  gap: 10px;
+  margin-top: -5px;
+}
+.feedShearedFooter > span {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+.feedShearedFooter__icon {
+  font-size: 1.3rem;
+}
